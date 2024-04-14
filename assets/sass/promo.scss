@@ -1,0 +1,30 @@
+/*Стили для главного блока*/
+.promo {
+    margin-bottom: 65px;
+
+    p {
+        margin-bottom: 262px;
+    }
+
+    h1 span {
+        color: #ffa239;
+    }
+
+    .promo-bg {
+        height: 628px;
+        background: url("../../public/Bg.png") center no-repeat;
+    }
+
+    .promo__list li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}
+/*Конец стилей для главного*/

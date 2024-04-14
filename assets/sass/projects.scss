@@ -1,0 +1,25 @@
+/*Стили для блока с проектами*/
+.projects {
+    margin-bottom: 100px;
+
+    .projects__cards {
+        img {
+            border-radius: 15px;
+            margin-bottom: 12px;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 18px;
+            color: #ffa239;
+            text-decoration: none;
+            margin-bottom: 6px;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/*Конец стилей для блока с проектами*/

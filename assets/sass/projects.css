@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*Стили для блока с проектами*/
+.projects {
+  margin-bottom: 100px;
+}
+
+.projects .projects__cards img {
+  border-radius: 15px;
+  margin-bottom: 12px;
+}
+
+.projects .projects__cards a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffa239;
+  text-decoration: none;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.projects .projects__cards a:hover {
+  text-decoration: underline;
+}
+
+/*Конец стилей для блока с проектами*/
+
+/*# sourceMappingURL=projects.css.map */
