@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*Стили для главного блока*/
+.promo {
+  margin-bottom: 65px;
+}
+
+.promo p {
+  margin-bottom: 262px;
+}
+
+.promo h1 span {
+  color: #ffa239;
+}
+
+.promo-bg {
+  height: 628px;
+  background: url("../../public/Bg.png") center no-repeat;
+}
+
+.promo__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.promo__list li:last-child {
+  margin-bottom: 0;
+}
+
+/*Конец стилей для главного*/
+
+/*# sourceMappingURL=promo.css.map */
