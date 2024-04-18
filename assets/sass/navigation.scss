@@ -3,15 +3,28 @@
     padding-top: 35px;
     margin-bottom: 72px;
 
+    @media screen and (max-width: 576px) {
+        padding-top: 10px;
+    }
+
     .navigation__wrap {
         display: flex;
         justify-content: space-between;
+
+        .navigation-logo {
+            @media screen and (max-width: 576px) {
+                width: 75px;
+            }
+        }
     }
 
     .navigation__list {
         display: flex;
         align-items: center;
         grid-gap: 39px;
+        @media screen and (max-width: 576px) {
+            grid-gap: 16px;
+        }
 
         .navigation__list-item {
             .navigation__list-item-link {
@@ -19,12 +32,43 @@
                 color: #0C2836;
                 text-decoration: none;
                 font-size: 18px;
+                display: block;
+                @media screen and (max-width: 576px) {
+                    display: none;
+                }
 
                 &:hover {
                     text-decoration: underline;
                 }
             }
+            .navigation__list-item-mobile-link {
+                display: none;
+                @media screen and (max-width: 576px) {
+                    display: block;
+                }
+            }
         }
     }
+}
+
+.phone-button, .mail-button {
+    padding: 9px;
+    border-radius: 7px;
+    color: #219CBA;
+    border: 1px solid #219CBA;
+    transition: box-shadow 300ms, transform 100ms;
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.phone-button {
+    background-color: #219CBA;
+    &:hover {
+        box-shadow: 0 0 10px 0 #219CBA;
+    }
+}
+.mail-button {
+
 }
 /*Конец стилей для навигации*/

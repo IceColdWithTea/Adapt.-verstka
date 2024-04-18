@@ -2,10 +2,15 @@
 .projects {
     margin-bottom: 100px;
 
+    .row {
+        row-gap: 24px;
+    }
+
     .projects__cards {
         img {
             border-radius: 15px;
             margin-bottom: 12px;
+            width: 100%;
         }
 
         a {

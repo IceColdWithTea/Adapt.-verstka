@@ -4,6 +4,15 @@
 
     .row {
         row-gap: 24px;
+
+        @media screen and (max-width: 576px) {
+            row-gap: 10px;
+        }
+        .col-6 {
+            @media screen and (max-width: 576px) {
+                padding: 0 5px;
+            }
+        }
     }
 
     .tech__cards {
@@ -21,6 +30,10 @@
         border-radius: 15px;
         background: #fff;
         box-shadow: var(--box-shadow);
+
+        @media screen and (max-width: 991px) {
+            padding-top: 44px;
+        }
 
         .tech__cards-img-wrap {
             width: 100%;

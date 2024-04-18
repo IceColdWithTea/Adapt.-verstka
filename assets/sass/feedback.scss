@@ -11,13 +11,24 @@
         flex-direction: column;
         justify-content: center;
 
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+            margin: 0 0 40px;
+            display: block;
+        }
+
         h2 {
             margin-bottom: 0;
         }
 
         p {
-           font-size: 24px;
-          margin-right: 8px;
+            font-size: 24px;
+            margin-right: 8px;
+
+            @media screen and (max-width: 1199px) {
+                text-align: center;
+                margin: 0;
+            }
         }
     }
 }
@@ -34,10 +45,7 @@
 
     textarea, input {
         display: block;
-        padding-top: 8px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 8px;
+        padding: 8px 12px;
         border: 1px solid #d9e2eb;
         border-radius: 10px;
         min-height: 40px;
@@ -54,6 +62,10 @@
         display: flex;
         gap: 16px;
         margin-bottom: 16px;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -66,6 +78,10 @@
     border: none;
     background: linear-gradient(90deg, #FB8601 -0.07%, #FFB703 100%);
     transition: box-shadow 300ms, transform 100ms;
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
 
     &:focus {
         transform: scale(0.95);
